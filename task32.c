@@ -1,15 +1,17 @@
 //factorial
 #include <stdio.h>
 int main() {
-    int n, i;
-    long long fact = 1;
+    int n;
+    int fact = 1;
 
-    printf("Enter number: ");
+    printf("Enter a number: ");
     scanf("%d", &n);
 
-    for(i=1; i<=n; i++) {
+    for(int i = 1; i <= n; i++) {
         fact = fact * i;
     }
-    printf("Factorial = %lld", fact);
+
+    printf("Factorial = %d", fact);
+
     return 0;
 }

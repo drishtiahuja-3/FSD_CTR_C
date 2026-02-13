@@ -1,19 +1,20 @@
 //prime 
 #include <stdio.h>
+
 int main() {
-    int n, i=2, flag=1;
+    int n, i, prime = 1;
+
     printf("Enter number: ");
     scanf("%d", &n);
 
-    while(i <= n/2) {
+    for(i = 2; i < n; i++) {
         if(n % i == 0) {
-            flag = 0;
+            prime = 0;
             break;
         }
-        i++;
     }
 
-    if(flag==1 && n>1)
+    if(prime == 1 && n > 1)
         printf("Prime Number");
     else
         printf("Not Prime");
